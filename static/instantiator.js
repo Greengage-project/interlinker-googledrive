@@ -555,7 +555,7 @@ function App() {
               </Grid>
               <Grid item xs={12} md={6} lg={4}>
                 <Typography variant="overline">
-                  Or import from Google Drive
+                  GENERATE A NEW FILE FROM GOOGLE DRIVE LINK
                 </Typography>
                 <TextField
                   error={error.key === "uri"}
