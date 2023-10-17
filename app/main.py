@@ -222,7 +222,7 @@ async def delete_asset(request: Request, id: str, collection: AsyncIOMotorCollec
 @integrablerouter.get(
     "/assets/{id}/download", response_description="Asset file"
 )
-async def download_asset(id: str, collection: AsyncIOMotorCollection = Depends(get_collection), service=Depends(get_service), user_id=Depends(deps.get_current_user_id)):
+async def download_asset(id: str, collection: AsyncIOMotorCollection = Depends(get_collection), service=Depends(get_service)):
     #print('-download asset function')
     if (asset := await crud.get(collection, service, id)) is not None:
         if "webContentLink" in asset:
