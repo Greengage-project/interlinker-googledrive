@@ -323,21 +323,21 @@ function App() {
       label: "Drawing",
       icon: "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_drawing_x32.png",
     },
-    site: {
-      value: "site",
-      label: "Site",
-      icon: "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_site_x32.png",
-    },
+    // site: {
+    //   value: "site",
+    //   label: "Site",
+    //   icon: "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_site_x32.png",
+    // },
     form: {
       value: "form",
       label: "Form",
       icon: "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_form_x32.png",
     },
-    jamboard: {
-      value: "jamboard",
-      label: "Jamboard",
-      icon: "https://cdn-icons-png.flaticon.com/512/2965/2965289.png",
-    },
+    // jamboard: {
+    //   value: "jamboard",
+    //   label: "Jamboard",
+    //   icon: "https://cdn-icons-png.flaticon.com/512/2965/2965289.png",
+    // },
     // "map": {
     //   "value": "map",
     //   "label": "Map",

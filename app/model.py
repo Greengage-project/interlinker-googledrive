@@ -17,10 +17,11 @@ mime_types = {
     "map": "application/vnd.google-apps.map",
     "slide": "application/vnd.google-apps.presentation",
     "script": "application/vnd.google-apps.script",
-    "site": "application/vnd.google-apps.site",
-    "jamboard": "application/vnd.google-apps.jam",
+    # "site": "application/vnd.google-apps.site",
+    # "jamboard": "application/vnd.google-apps.jam",
 }
 mime_type_options = mime_types.keys()
+
 
 class AssetCreateSchema(BaseModel):
     mime_type: str
@@ -33,7 +34,7 @@ class AssetBasicDataSchema(BaseModel):
     iconLink: str = Field(alias='icon')
     createdTime: datetime.datetime = Field(alias='created_at')
     modifiedTime: Optional[datetime.datetime] = Field(alias='updated_at')
-    
+
     class Config:
         allow_population_by_field_name = True
 
@@ -56,4 +57,3 @@ class AssetBasicDataSchema(BaseModel):
     editLink: Optional[str]
     cloneLink: Optional[str]
     """
-    
